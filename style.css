@@ -82,6 +82,8 @@ a{
 .hero-img img{
     width: 100%;
 }
+/* SEARCH  */
+
 .search-main-wrapper{
     width: 100%;
     text-align: center;
@@ -91,16 +93,14 @@ a{
 .search-main-wrapper li{
     list-style: none;
 }
-.search-main-wrapper input{
+.search-main-wrapper select{
     width: 90%;
     border-radius: 5px;
     padding: 10px;
     margin: 2px;
     
 }
-label{
-    color: var(--mainSilver);
-}
+
 .search-btn{
     width: 93%;
     border: none;
@@ -331,6 +331,9 @@ footer p{
 }
 
 
+.selection-label{
+    color: white;
+}
 
 @media screen and (min-width: 360px){
     .logo img{

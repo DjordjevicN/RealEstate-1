@@ -29,9 +29,7 @@
                         <a href="#home">
                             <li>Home</li>
                         </a>
-                        <a href="#search">
-                            <li>Search</li>
-                        </a>
+
                         <a href="#about">
                             <li>About</li>
                         </a>
@@ -49,9 +47,7 @@
                     <a href="#home">
                         <li>Home</li>
                     </a>
-                    <a href="#search">
-                        <li>Search</li>
-                    </a>
+
                     <a href="#about">
                         <li>About</li>
                     </a>
@@ -67,16 +63,44 @@
     </div>
     <section class="search-main-wrapper">
 
-        <ul>
-            <!-- <label for="location">Location</label> -->
-            <li class="location"> <input type="text" name="location" placeholder="Search City, Zip or Area"></li>
-            <!-- <label for="min">Min-Price</label> -->
-            <li class="min-price"> <input type="text" name="min" placeholder="Min-Price"></li>
-            <!-- <label for="max">Max-Price</label> -->
-            <li class="max-price"> <input type="text" name="max" placeholder="Max Price"></li>
-            <!-- <label for="beds">Beds</label> -->
-            <li class="beds"> <input type="text" name="beds" placeholder="Beds"></li>
 
+        <ul>
+            <li>
+                <p class="selection-label">Town</p>
+                <select class="location">
+                    <option value="belgrade">Belgrade</option>
+                    <option value="zemun">Zemun</option>
+                    <option value="hawai">Hawai</option>
+                    <option value="newyork">NewYork</option>
+                </select>
+            </li>
+            <li>
+                <p class="selection-label">Min Price</p>
+                <select class="min-price">
+                    <option value="1000">$ 1000</option>
+                    <option value="5000">$ 5000</option>
+                    <option value="7000">$ 7000</option>
+                    <option value="10000">$ 10000</option>
+                </select>
+            </li>
+            <li>
+                <p class="selection-label">Max Price</p>
+                <select class="max-price" aria-placeholder="">
+                    <option value="10000">$ 10000</option>
+                    <option value="7000">$ 7000</option>
+                    <option value="5000">$ 5000</option>
+                    <option value="1000">$ 1000</option>
+                </select>
+            </li>
+            <li>
+                <p class="selection-label">Type</p>
+                <select class="property-type">
+                    <option value="house">House</option>
+                    <option value="flat">Flat</option>
+                    <option value="vila">Vila</option>
+
+                </select>
+            </li>
         </ul>
         <button class="search-btn"><i class="fas fa-search"></i></button>
 
@@ -85,22 +109,12 @@
     <section class="landing-gallery">
         <h1 class="landing-gallery-title"><span>FEATURED</span> LISTINGS</h1>
 
-
+        <!-- <a href="#" id="bottle" onclick="document.location=this.id+'.html';return false;">
+            <img src="./images/props/logo.png" alt="bottle" class="thumbnails" />
+        </a> -->
         <div class="landing-gallery-content">
 
-            <a href="">
-                <div class="property-card">
-                    <img src="./images/property/cov.jpg" alt="">
-                    <div class="property-card-information">
-                        <p class="property-address">1244 Agnes circle , Rancho Cordova</p>
 
-                        <h2 class="property-price"><span>$355,000</span> (For Sale)</h2>
-                        <p class="property-beds">Beds: 5</p>
-                        <p class="property-size">1,976 m2</p>
-                        <p class="property-baths">Baths: 3</p>
-                    </div>
-                </div>
-            </a>
 
             <!-- inport size into JSON -->
 
@@ -114,7 +128,7 @@
 
 
 
-        <button class="btn-to-gallery">VIEW GALLERY</button>
+        <button class="btn-to-gallery">VIEW ALL</button>
 
     </section>
     <section class="action-banner">
